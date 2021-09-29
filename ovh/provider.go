@@ -41,6 +41,7 @@ func Provider() *schema.Provider {
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{
+			"ovh_cloud_project":                                       dataSourceCloudProject(),
 			"ovh_cloud_project_capabilities_containerregistry":        dataSourceCloudProjectCapabilitiesContainerRegistry(),
 			"ovh_cloud_project_capabilities_containerregistry_filter": dataSourceCloudProjectCapabilitiesContainerRegistryFilter(),
 			"ovh_cloud_project_containerregistries":                   dataSourceCloudProjectContainerRegistries(),
